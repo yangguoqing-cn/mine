@@ -1,0 +1,283 @@
+@charset "utf-8";
+#reg-top{
+    border:1px solid #ccc;
+    width:100%;
+}
+.reg-topcon{
+    width:1100px;
+    padding:30px 0;
+    margin:0 auto;
+    overflow: hidden;
+}
+.e-logo{
+    float:left;
+}
+.e-logo a,.e-logo img{
+    display:inline-block;
+    vertical-align: middle;
+}
+.account{
+    float:right;
+    margin: 13px 5px 0 0;
+}
+.account a:first-child{
+    color:#666;
+}
+.account a:last-child{
+     font-size: 16px;
+     color:#666;
+}
+.bot-res{
+    width:100%;
+    height:180px;
+}
+.bot-con ul{
+    padding:70px 0 30px;
+    width:324px;
+    margin:0 auto;
+    text-align:center;
+}
+.bot-con ul li{
+    float:left;
+}
+.bot-con ul li a{
+    color:#999;
+    font-size:12px;
+    display:inline-block;
+    padding:0 5px;
+    border-right:1px solid #ccc;
+}
+.yu{
+    width:820px;
+    font-size:12px;
+    color:#999;
+    margin:0 auto;
+}
+.main-con .sec-rig {
+   width: 200px;
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    height: 52px;
+    line-height: 52px;
+    vertical-align: middle;
+    display: inline-block;
+    position:relative;
+    float:left;
+}
+.sec-rig img{
+   position: absolute;
+   top: 0px;
+   left: -2px;
+   height:52px;
+   width:104px;
+}
+.sec-rig a{
+    width: 88px;
+    border-radius: 0 10px 10px 0;
+    border-left: #ddd solid 1px;
+    position: absolute;
+    right: 9px;
+    text-align:center;
+}
+.mabod{
+    width:100%;
+    height: 628px;
+    background:url(../images/e6ff45455d918c75807af425e3764b7e.jpg) no-repeat ;
+}
+.mabod-con{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+.nor-login,.spec-login{
+    width: 296px;
+    padding: 0 36px 30px;
+    background: #fff;
+    top: 70px;
+    right: 5px;
+    position:absolute;
+}
+.login-top span{
+    height: 67px;
+    line-height: 80px;
+    width: 50%;
+    display:inline-block;
+    font-size: 14px;
+    float:left;
+}
+.login-top span{
+    border-bottom:#ccc solid 1px;
+}
+.login-top span:first-child{
+    color: #000;
+    border-bottom: #33cb98 solid 1px;
+}
+.inp1,.inp2{
+    border: #ddd solid 1px;
+    height: 45px;
+    line-height: 45px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 15px;
+}
+.hlogo{
+    width: 23px;
+    height: 19px;
+    background-position: 0 0px;
+    vertical-align: middle;
+    background:url(../images/ico.png) no-repeat;
+    display:inline-block;
+}
+.mas{
+    width: 23px;
+    height: 19px;
+    vertical-align: middle;
+    background:url(../images/ico.png) 0 -28px no-repeat;
+    display:inline-block;
+}
+.iema-user,.pasjd{
+    height: 40px;
+    line-height: 40px;
+    width: 244px;
+    border: none;
+    text-indent: 2px;
+}
+.login-bot{
+    position:relative;
+    margin-top:20px;
+}
+.login-bot span:first-child{
+    position:absolute;
+    left:0;
+    color: #666;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.login-bot span:last-child{
+    position:absolute;
+    right:0;
+    color: #666;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.last{
+    display:inline-block;
+    background: #33cb98;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    margin: 20px 0 15px;
+    text-align:center;
+    color:#fff;
+}
+.corpol{
+    float:left;
+    width:107px;
+    height:50px;
+}
+.corporight{
+    float:right;
+}
+.corporight a{
+	text-decoration: none;
+	color: #000;
+}
+.corporight a{
+	color: #000;
+}
+.weixin,.qq,.zfb{
+    display:inline-block;
+    margin-right:8px;
+    width: 23px;
+    height: 19px;
+    vertical-align: middle;
+    background: url(../images/ico.png) no-repeat;
+}
+.weixin{
+    background-position:0 -144px;
+}
+.qq{
+    background-position:0 -86px;
+}
+.zfb{
+    background-position:0 -170px;
+}
+.ku{
+    margin-top:10px;
+}
+.inp3{
+    width: 178px;
+    float: left;
+    border: #ddd solid 1px;
+    height: 45px;
+    line-height: 45px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 15px;
+    position:;
+}
+.inp3-con{
+     width:296px;
+     height:80px;
+     position:relative;
+}
+.dya{
+     width: 23px;
+    height: 19px;
+    vertical-align: middle;
+    background:url(../images/login_ico.png) 0 -11px no-repeat;
+    display:inline-block;
+}
+.dynaic{
+    border:none;
+    height: 40px;
+    line-height: 40px;
+    display:inline-block;
+    width:146px;
+}
+.dma{
+    padding: 0px;
+    width: 98px;
+    position:absolute;
+    right:0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #33cb98;
+    height: 45px;
+    line-height: 45px;
+    margin: 20px 0 0 0;
+    font-size:12px;
+}
+.login-bot1 {
+    position:relative;
+}
+.login-bot1 span:first-child{
+    position:absolute;
+    left:0;
+}
+.login-bot1 span:last-child{
+    position:absolute;
+    right:0;
+}
+.inp2-con {
+   width: 296px;
+    height: 80px;
+    position:relative;
+}
+.inp2-con .inp2{
+    width:180px;
+     position:absolute;
+     left:0;
+}
+.pasjd{
+    width:146px;
+}
+
+.inp2-con .hse{
+    margin-top: 20px;
+    width: 100px;
+    padding: 0px;
+    float: right;
+}
+
+

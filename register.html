@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet"  href="css/common.css"   type="text/css">
+     <link rel="stylesheet"  href="css/register.css"   type="text/css">
+     <script src="js/jquery-1.11.0.js"></script>
+     <script src="js/jquery.cookie.js"></script>
+     <script src="js/register.js"></script>
+
+</head>
+<body>
+    <div id="reg-top">
+    <!-- 头部 -->
+        <div class="reg-topcon">
+            <div class="e-logo">
+                <a href="javascript:;"><img src="images/cart-logo.png" alt=""></a>
+                <span><img src="images/welcome_07.jpg" alt=""></span>
+            </div>
+            <div class="account">
+                <a href="javascript:;">已有帐号？</a>
+                <a href="login.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 表单 -->
+    <div id="form-body">
+        <div class="main-con">
+            <form action="">
+                <div class="ipho">
+                    <span>手机号：</span><input type="text" placeholder="请输入手机号码" id="iphones">
+                </div>
+                <div class="please" style="display:none">
+                        <span class="erroripho">请输入11位电话号码</span>
+                </div>
+                <div class="please2" style="display:none">
+                        <span class="erroripho">号码格式错误，请重新输入！(请输入11位电话号码)</span>
+                </div>
+                <div class="please1" style="display:none">
+                        <span class="erroripho"><img src="images/ok_03.jpg"></span>
+                </div>
+                <div class="sec-code clearfix">
+                    <span style="float:left">验证码：</span>
+                    <input type="text" placeholder="请输入图片内容" style="float:left" id="pic-con">
+                    <div class="sec-rig">
+                        <img src="images/seccode.png" alt="">
+                        <a href="javascript:;">换一换</a>
+                    </div>
+                    <div class="confir" style="display:none">
+                        <span class="errorconfir">请输入4位验证码</span>
+                        <div class="confir1" style="display:none">
+                        <span class="errorconfir"><img src="images/ok_03.jpg"></span>
+                   </div>
+                   </div>
+                </div>
+                <div class="text-code">
+                    <span>短信验证码：</span><input type="text" placeholder="验证码">
+                     <a href="">获取验证码</a>
+                </div>
+                   <div class=" illegality" style="display:none">
+                        <span class="erroreil">验证码包含非法符号</span>
+                   </div>
+                 <div class="username">
+                    <span>用户名：</span><input type="text" placeholder="用户名" id="userBac" >
+                </div>
+                 <div class="userNa" style="display:none">
+                        <span class="errouser">请输入4到20位用户名</span>
+                   </div>
+                   <div class="userNa2" style="display:none">
+                        <span class="errouser">用户名格式错误，请重新输入！(请输入4到20位用户名)</span>
+                   </div>
+                   <div class="userNa1" style="display:none">
+                        <span class="errouser"><img src="images/ok_03.jpg"></span>
+                   </div>
+                 <div class="password">
+                    <span>密码：</span><input type="text" placeholder="密码（8-20位，区分大小写）" id="mama">
+                </div>
+                   <div class="pasddd" style="display:none">
+                        <span class="erropa">请输入8到20位密码</span>
+                   </div>
+                   <div class="pasddd2" style="display:none">
+                        <span class="erropa">密码格式错误，请重新输入!(请输入8到20位密码)</span>
+                   </div>
+                   <div class="pasddd1" style="display:none">
+                        <span class="erropa"><img src="images/ok_03.jpg"></span>
+                   </div>
+                   
+                 <div class="confirpas">
+                    <span>确认密码：</span><input type="text" placeholder="确认密码" id="confirs">
+                </div>
+                <div class="surepas" style="display:none">
+                        <span class="errosure">请输入确认密码</span>
+                </div>
+                 <div class="surepas2" style="display:none">
+                        <span class="errosure">两次密码输入不一致，请重新输入！</span>
+                </div>
+                <div class="surepas1" style="display:none">
+                        <span class="errosure"><img src="images/ok_03.jpg"></span>
+                </div>
+                <div class="agree">
+                    <input type="checkbox" checked="checked"><span>我已阅读并接受E宠<a href="javascript:;">《用户使用协议》</a></span>
+                </div>
+                <a class="regt" href="javascript:;">
+                        立即注册
+                </a>
+             </form>
+        </div>
+
+    </div>
+<!-- bottom -->
+    <div class="bot-res">
+        <div class="bot-con">
+            <ul>
+                <li><a href="javascript:;">E宠商城</a></li>
+                <li><a href="javascript:;">淘宠</a></li>
+                <li><a href="javascript:;">知识</a></li>
+                <li><a href="javascript:;">游戏</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+            </ul>
+        </div>
+        <p class="yu">渝ICP备13005525号-2   渝ICP备 10002905  增值电信业务经营许可证：渝B2-20140042   Copyright © 2007-2016 epet.com  重庆易宠科技有限公司</p>
+    </div>
+</body>
+</html>

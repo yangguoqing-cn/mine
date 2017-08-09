@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+     <link rel="stylesheet"  href="../css/common1.css"   type="text/css">
+     <link rel="stylesheet"  href="../css/common.css"   type="text/css">
+     <link rel="stylesheet"  href="../css/shop-cart.css"   type="text/css">
+    <script src="../js/jquery-1.11.3.js"></script>
+     <script src="../js/jquery.cookie.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="header2"></div>
+    <!-- 侧栏 -->
+    <div id="ces"></div>
+     <!-- 搜索 -->
+     <div class="search-top clearfix">
+        <div class="logo"><img src="../images/cart-logo.png" alt=""></div>
+         <p class="shop-cart1">购物车</p>
+        <form action="" class="search-rig clearfix">
+            <input type="text">
+            <a href="javascript:;">搜索</a>
+        </form>
+     </div>
+     <!-- 购物车浏览 -->
+     <div class="gou">
+            <ul class="gou-con">
+                <li class="cart">
+                    购物车
+                    <em>6</em>
+                </li>
+                <li class="coll">
+                    我的收藏
+                    <em>0</em>
+                </li>
+                <li class="alread">
+                    我购买过
+                    <em>0</em>
+                </li>
+                <li class="last">
+                    最近浏览
+                    <em>0</em>
+                </li>
+            </ul>
+            <!-- 小的箭头 -->
+            <div class="jian-arrow">
+                <i></i>
+            </div>
+    </div>
+           <!--购物详情 -->
+           <div class="gou-details">
+                <div>
+                    <div>
+                        <div>
+                            <div class="chart-one clearfix">
+                                  <label for="">
+                                       <input type="checkbox"  checked>
+                                  </label>
+                              <span class="east">东部大仓</span>
+                                    <b class="f1">
+                                        <img src="../images/help.jpg" alt="">
+                                    </b>
+                                <div class="ybyou">
+                                        <span>已包邮</span>
+                                        订单已包邮
+                                </div>
+                            </div>
+                        </div>
+                         <!-- 购物车的具体内容 -->
+                       <div class="ju-con">
+                             <div id="duid2">
+                                    <input type="checkbox" checked>
+                            </div>
+                            <div class="yhui clearfix">
+                                    <a href="javascript:;">
+                                        <img src="../images/545b5df93ecac887f5fe4d1df9c25439.jpg@!100w-c.jpg" alt="">
+                                    </a>
+                                    <div class="pro-intro">
+                                        <em class="yh-one">(多件优惠)</em>
+                                        <em class="nono">[不可空运]</em>
+                                         碧艾欧BIO-GROOM 亮白洗毛精 分装410ml 分装410ml
+                                    </div>
+                            </div>
+                             <div>
+                                <div class="gcs">
+                                    <input type="text" value="1">
+                                     <p>还剩6瓶，该出手时赶紧出手啊！</p>
+                                </div>
+                            </div>
+                              <div>
+                                <div class="prices">
+                                      <p>￥213.30</p>
+                                       <p>￥71.10/件</p>
+                                </div>
+                            </div>
+                             <div>
+                                <div class="coldel">
+                                     <a href="javascript:;">[收藏]</a>
+                                      <a href="javascript:;">[删除]</a>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            <div class="jisuan">
+                <div class="jisuan-left">
+                    <input type="checkbox" checked>
+                    <span>全选</span>
+                    <a href="javascript:;">[删除选中商品]</a>
+                    <a href="javascript:;">[收藏选中商品]</a>
+                </div>
+                 <div class="jisuan-right">
+                    <span>总价（不含运费):</span>
+                    <span class="ft18">￥252.30</span>
+                    <a href="javascript:;" class="gtcal">去结算<i>4</i></a>
+                </div>
+            </div>
+           </div>
+           <div class="contin">
+                 <a href="javascript:;">继续购物</a>
+           </div>
+
+     <!-- footer -->
+     <div id="footer2"></div>
+    <script>
+        $(function(){
+                $("#ces").load("http://localhost/stage2/e-dogShop-zhangbiling/html/celan.html");
+                $("#footer2").load("http://localhost/stage2/e-dogShop-zhangbiling/html/footer.html")
+                 $("#header2").load("http://localhost/stage2/e-dogShop-zhangbiling/html/head-top.html")
+
+                // 鼠标划过，下面的小箭头滑动
+                $(".gou-con  li").mouseover(function(){
+                         var index=$(this).index();
+                          $(".jian-arrow").css(
+                           {
+                             left:140*index+"px"
+                          })
+                          $(".gou-con  li").eq(index).css(
+                            {
+                              "color":"orange"
+                          })
+                })
+              $(".gou-con  li").mouseout(function(){
+                    var index=$(this).index();
+                    $(".gou-con  li").eq(index).css(
+                        {
+                            "color":"black"
+                        })
+              });
+
+
+              // 点击添加购物车
+               //接受cookie
+              var str= $.cookie("cart");
+               str=str?str:"{}";
+               var obj=JSON.parse(str);
+               $(".yhui a").eq(0).children("img").attr("src",obj.pic);
+               $(".pro-intro").html(" <em class='yh-one'>(多件优惠)</em>"+
+                                        "<em class='nono'>[不可空运]</em>"+obj.message);
+               $(".prices p").eq(0).html(obj.money);
+
+            $(".coldel a").eq(1).click(function(){
+                 if(confirm("你确定你要删，很便宜的！")){
+                         $(".ju-con").remove();
+                       // $.cookie("cart",null,{"expires":-1,"path":"/"});
+                 }
+
+            })
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+@charset "utf-8";
+#reg-top{
+    border:1px solid #ccc;
+    width:100%;
+}
+.reg-topcon{
+    width:1100px;
+    padding:30px 0;
+    margin:0 auto;
+    overflow: hidden;
+}
+.e-logo{
+    float:left;
+}
+.e-logo a,.e-logo img{
+    display:inline-block;
+    vertical-align: middle;
+}
+.account{
+    float:right;
+    margin: 13px 5px 0 0;
+}
+.account a:first-child{
+    color:#666;
+}
+.account a:last-child{
+     font-size: 16px;
+     color:#427fd2;
+}
+.main-con{
+    padding-top:55px;
+    width:1100px;
+    margin:0 auto;
+}
+.main-con form{
+    margin-left:228px;
+    width:516px;
+    height:531px;
+    position:relative;
+}
+.main-con div{
+    margin-bottom:10px;
+}
+.main-con div span{
+    text-align:right;
+    display:inline-block;
+    font-size: 16px;
+    width:96px;
+}
+.main-con div input{
+    border:1px solid #ddd;
+    width:413px;
+    height:52px;
+    text-indent: 16px;
+    color:#999;
+    border-radius:5px;
+    font-size: 14px;
+    margin-right:4px;
+}
+#form-body {
+    border:1px solid #ccc;
+}
+#form-body  .sec-code input{
+    width:203px;
+    margin-right:5px;
+    vertical-align: middle;
+}
+#form-body .text-code input{
+    width:255px;
+    margin-right:5px;
+    vertical-align: middle;
+}
+#form-body .text-code a{
+    text-align:center;
+    width: 149px;
+   border: #33cb98 solid 1px;
+   display:inline-block;
+   border-radius: 5px;
+    height: 52px;
+    line-height: 52px;
+    vertical-align: middle;
+
+}
+.main-con div input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ddd;
+}
+.main-con div input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:  #ddd;
+}
+.main-con div input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:   #ddd;
+}
+.main-con div input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:   #ddd;
+}
+.main-con .agree>input{
+    width:13px;
+    height:13px;
+}
+.main-con .agree>span{
+    display:inline-block;
+    height: 20px;
+    margin-right: 2px;
+    line-height: 20px;
+    color: #999;
+    font-size:14px;
+    width:390px;
+    text-align:left;
+}
+.regt{
+    border-radius: 5px;
+    background: #ededed;
+    width: 413px;
+    height: 52px;
+    line-height: 52px;
+    margin: 15px 0 50px 100px;
+    display:inline-block;
+    text-align:center;
+    color:#fff;
+}
+.agree{
+    padding-left:100px;
+}
+.bot-res{
+    width:100%;
+    height:180px;
+}
+.bot-con ul{
+    padding:70px 0 30px;
+    width:324px;
+    margin:0 auto;
+    text-align:center;
+}
+.bot-con ul li{
+    float:left;
+}
+.bot-con ul li a{
+    color:#999;
+    font-size:12px;
+    display:inline-block;
+    padding:0 5px;
+    border-right:1px solid #ccc;
+}
+.yu{
+    width:820px;
+    font-size:12px;
+    color:#999;
+    margin:0 auto;
+}
+.main-con .sec-rig {
+   width: 200px;
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    height: 52px;
+    line-height: 52px;
+    vertical-align: middle;
+    display: inline-block;
+    position:relative;
+    float:left;
+}
+.sec-rig img{
+   position: absolute;
+   top: 0px;
+   left: -2px;
+   height:52px;
+   width:104px;
+}
+.sec-rig a{
+    width: 88px;
+    border-radius: 0 10px 10px 0;
+    border-left: #ddd solid 1px;
+    position: absolute;
+    right: 9px;
+    text-align:center;
+}
+.please{
+    font-size: 14px;
+    left: 520px;
+    top: 0;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 150px;
+}
+.please1{
+    left: 520px;
+    top: 20px;
+    padding: 0 10px;
+    height: 52px;
+    position:absolute;
+    width: 150px;
+}
+.main-con div.please2 span{
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 1px;
+	width:370px;
+}
+
+.please2{
+    font-size: 14px;
+    left: 520px;
+    top: 0px;
+    padding: 0 1px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 370px;
+}
+/*.please1{
+	position: absolute;
+	left: 520px;
+}*/
+.please  .erroripho{
+    width:150px;
+    text-align:left;
+}
+.confir{
+    font-size: 14px;
+    left: 520px;
+    top: 64px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 150px;
+}
+.confir1{
+    left: 520px;
+    top: 84px;
+    padding: 0 10px;
+    height: 52px;
+    position:absolute;
+    width: 150px;
+}
+.confir .errorconfir{
+    width:150px;
+    text-align: left;
+}
+.illegality{
+    font-size: 14px;
+    left: 520px;
+    top: 138px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 150px;
+}
+.illegality1{
+	 padding: 0 10px;
+   	left: 520px;
+    top: 158px;
+   	height: 52px;
+    position:absolute;
+    width: 150px;
+}
+.illegality .erroreil{
+    width:150px;
+    text-align: left;
+}
+.userNa{
+    font-size: 14px;
+    left: 520px;
+    top: 203px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 150px;
+}
+.userNa1{
+     padding: 0 10px;
+    left: 520px;
+    top: 218px;
+    height: 52px;
+    position:absolute;
+    width: 150px;
+}
+.userNa  .errouser{
+    width:150px;
+    text-align: left;
+    font-size:14px;
+}
+.userNa2{
+    font-size: 14px;
+    left: 520px;
+    top: 203px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 390px;
+}
+.main-con div.userNa2 span{
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 1px;
+	width:390px;
+}
+.pasddd{
+    font-size: 14px;
+    left: 520px;
+    top: 266px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 150px;
+}
+.pasddd2{
+    font-size: 14px;
+    left: 520px;
+    top: 266px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 390px;
+}
+.main-con div.pasddd2 span{
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 1px;
+	width:390px;
+}
+.pasddd1{
+   
+    left: 520px;
+    top: 286px;
+     padding: 0 10px;
+    height: 52px;
+    
+    position:absolute;
+    width: 150px;
+}
+.pasddd  .erropa{
+    width:150px;
+    text-align: left;
+    font-size:14px;
+}
+.surepas{
+    font-size: 14px;
+    left: 520px;
+    top: 330px;
+    padding: 0 10px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 150px;
+}
+.surepas2{
+    font-size: 14px;
+    left: 520px;
+    top: 330px;
+    padding: 0 1px;
+    height: 52px;
+    line-height: 52px;
+    background: #fff3d9;
+    color: #ff6f4a;
+    position:absolute;
+    width: 270px;
+}
+
+
+.main-con div.surepas2 span{
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 1px;
+	width:270px;
+}
+.surepas1{
+    
+    left: 520px;
+    top: 350px;
+    padding: 0 10px;
+    height: 52px;
+    
+    position:absolute;
+    width: 150px;
+}
+.surepas  .errosure{
+    width:150px;
+    text-align: left;
+    font-size:14px;
+}
+.text-code>a:hover{
+    background:green;
+    color:#fff;
+}
+
+
+
