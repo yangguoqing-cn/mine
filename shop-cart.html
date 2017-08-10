@@ -6,8 +6,8 @@
      <link rel="stylesheet"  href="css/common1.css"   type="text/css">
      <link rel="stylesheet"  href="css/common.css"   type="text/css">
      <link rel="stylesheet"  href="css/shop-cart.css"   type="text/css">
-    <script src="js/jquery-1.11.3.js"></script>
-     <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/jquery.cookie.js"></script>
 </head>
 <body>
     <!-- 头部 -->
@@ -121,13 +121,70 @@
                  <a href="javascript:;">继续购物</a>
            </div>
 
-     <!-- footer -->
-     <div id="footer2"></div>
+      <div id="footer">
+        <div class="fot-top">
+             <ul class="fot-topcon">
+                    <li class="title  fot-one">绝对的正品</li>
+                    <li class="title  fot-two">全球的好货</li>
+                    <li class="title  fot-three">自家的仓库</li>
+                    <li class="title  fot-four">自家的配送</li>
+                    <li class="title  fot-five">养宠的帮手</li>
+                    <li class="title  fot-six">小小的成绩</li>
+             </ul>
+        </div>
+        <div class="fot-con">
+                <ul class="heaps">
+                     <li><a href="javascript:;"><img src="images/img/dog_phone.gif" alt=""></a></li>
+                     <li class="hotline">
+                         <h2>服务热线</h2>
+                         <p class="dianh">400-888-9200</p><span class="mian">(免长途费)</span>
+                         <p>023-65584888</p>
+                         <p class="work">工作时间：09:00--21:00</p>
+                     </li>
+                     <li class="f12">
+                         <h3>支付方式</h3>
+                         <p class="m20">货到付款</p>
+                         <p>余额支付</p>
+                         <p>在线支付</p>
+                     </li>
+                     <li class="f1">
+                         <h3>配送方式</h3>
+                         <p class="m20">E宠快递</p>
+                         <p>外包快递</p>
+                         <p>物流运输</p>
+                         <p>公司地址</p>
+                     </li>
+                      <li class="f1">
+                         <h3>购物指南</h3>
+                         <p class="m20">退换货政策</p>
+                         <p>它时代杂志</p>
+                         <p>常见问题</p>
+                         <p>宠物知识</p>
+                     </li>
+                       <li class="f1">
+                         <h3>关于我们</h3>
+                         <p class="m20">关于我们</p>
+                         <p>仓储中心</p>
+                         <p>联系我们</p>
+                         <p>人才招聘</p>
+                     </li>
+                       <li class="app f1">
+                         <p>扫描下载APP</p>
+                         <p>下单更优惠</p>
+                         <img src="images/img/app-code.jpg" alt="">
+                     </li>
+                      <li class="hui f1">
+                         <p>扫描关注E宠</p>
+                         <p>商城微信</p>
+                         <img src="images/img/dw2.png" alt="">
+                     </li>
+                </ul>
+        </div>
+    </div>
+
+
     <script>
         $(function(){
-                $("#ces").load("http://localhost/stage2/e-dogShop-zhangbiling/html/celan.html");
-                $("#footer2").load("http://localhost/stage2/e-dogShop-zhangbiling/html/footer.html")
-                 $("#header2").load("http://localhost/stage2/e-dogShop-zhangbiling/html/head-top.html")
 
                 // 鼠标划过，下面的小箭头滑动
                 $(".gou-con  li").mouseover(function(){
@@ -157,7 +214,7 @@
                var obj=JSON.parse(str);
                $(".yhui a").eq(0).children("img").attr("src",obj.pic);
                $(".pro-intro").html(" <em class='yh-one'>(多件优惠)</em>"+
-                                        "<em class='nono'>[不可空运]</em>"+obj.message);
+                                        "<em class='nono'>[不可空运]</em>￥80");
                $(".prices p").eq(0).html(obj.money);
 
             $(".coldel a").eq(1).click(function(){
