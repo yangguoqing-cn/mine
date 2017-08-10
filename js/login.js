@@ -23,11 +23,11 @@ $(function(){
                     }
            })
            .then(function(res){
-           	console.log("wwww");
+          /* 	console.log("wwww");*/
            		console.log(res);
                     switch(res){
                        case "0":$(".please").css({"display":"block"}).siblings().css({"display":"none"});
-                       console.log(0000000);
+/*                       console.log(0000000);*/
                        break;
                        case "2":$(".please1").css({"display":"block"}).siblings().css({"display":"none"});
                        break;
