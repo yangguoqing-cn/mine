@@ -79,7 +79,7 @@ $(function(){
          })
          $(".regt").click(function(){
                 var str2=$("#userBac").val();
-                var res2=/^[a-zA-z][a-zA-Z0-9_]{4,16}$/;
+                var res2=/^[a-zA-Z0-9_]{4,16}$/ ;
                 if(!res2.test(str2)&&str2!=""){
                      $(".userNa2").css("display","block");
                       $(".userNa1").css("display","none");
@@ -172,9 +172,8 @@ $(function(){
            $.ajax({
                     url:"http://datainfo.duapp.com/shopdata/userinfo.php",
                     data:{
-                      status:"register",
-						/*status:"login",*/
-                        userID:user,
+                      	status:"register",
+						userID:user,
                         password:pass
                     }
            })
@@ -182,9 +181,13 @@ $(function(){
                     switch(res){
                        case "0":$(".errouser").html("用户名已存在");break;
                        case "1":$(".regt").html("注册成功正在跳转....").css("background","green");
-                        location.href="index.html";
-                      var str= JSON.stringify({"user":user,"password":pass})
-                       $.cookie("mingzi",str,{"expires":7,"path":"/"})
+                       setInterval(function(){
+                       	 location.href="index.html";
+                       },500);
+                       
+                      var str= JSON.stringify({"user":user,"password":pass});;
+                       $.cookie("mingzi",str,{"expires":7,"path":"/"});
+                       console.log($.cookie('mingzi'));
                        break;
                         default:$(".errosure   .erropa  .errouser .erroreil  .errorconfir  .erroripho").html("不能为空");
                    }
